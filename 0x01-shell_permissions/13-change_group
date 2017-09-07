@@ -1,2 +1,2 @@
 #!/bin/bash
-chmown -h :holberton hello
+chgrp holberton hello
