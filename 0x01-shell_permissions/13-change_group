@@ -1,2 +1,2 @@
 #!/bin/bash
-chmown :holberton hello
+chmown -h :holberton hello
