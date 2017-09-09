@@ -1,0 +1,14 @@
+total 80
+drwxr-xr-x  13 syrinx  staff  442 Sep  9 10:11 .
+drwxr-xr-x   7 syrinx  staff  238 Sep  9 09:43 ..
+-rwxr-xr-x   1 syrinx  staff   32 Sep  9 09:49 0-hello_world
+-rwxr-xr-x   1 syrinx  staff   28 Sep  9 09:51 1-confused_smiley
+-rwxr-xr-x   1 syrinx  staff   28 Sep  9 09:52 2-hellofile
+-rwxr-xr-x   1 syrinx  staff   39 Sep  9 09:54 3-twofiles
+-rwxr-xr-x   1 syrinx  staff   33 Sep  9 09:55 4-lastlines
+-rwxr-xr-x   1 syrinx  staff   33 Sep  9 09:56 5-firstlines
+-rwxr-xr-x   1 syrinx  staff   39 Sep  9 10:08 6-third_line
+-rwxr-xr-x   1 syrinx  staff   36 Sep  9 10:11 8-cwd_state
+-rw-r--r--   1 syrinx  staff   21 Sep  9 09:46 README.md
+-rw-r--r--   1 syrinx  staff  800 Sep  9 10:00 icta
+-rw-r--r--   1 syrinx  staff    0 Sep  9 10:11 ls_cwd_content
