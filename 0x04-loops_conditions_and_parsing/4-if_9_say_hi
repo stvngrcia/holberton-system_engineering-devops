@@ -6,7 +6,7 @@ do
     echo "Holberton school"
     if ((n == 8))
     then
-        echo "hi"
+        echo "Hi"
     fi
     n=$((n+1))
 done
