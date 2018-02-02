@@ -3,7 +3,7 @@
 n=0
 while (($n < 10))
 do
-    echo "Holberton school"
+    echo "Holberton School"
     if ((n == 8))
     then
         echo "Hi"
