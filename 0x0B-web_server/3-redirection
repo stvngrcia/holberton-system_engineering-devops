@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Creates a redirection
 sudo apt-get install -y nginx
-new="34.239.246.45;\n\tlocation \/redirect_me{\n\t\treturn 301 http:\/\/www.google.com;}"
+new="localhost;\n\tlocation \/redirect_me{\n\t\treturn 301 http:\/\/www.google.com;}"
 sed -i "s/localhost;/$new/" /etc/nginx/sites-available/default
 sudo service nginx restart
