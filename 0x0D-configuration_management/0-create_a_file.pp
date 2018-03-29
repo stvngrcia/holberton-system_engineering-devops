@@ -1,5 +1,5 @@
+# Creates a file owened by www-data
 file { '/tmp/holberton':
-    # Creates a file owened by www-data
     ensure  => file,
     path    => '/tmp/holberton',
     mode    => '0744',
