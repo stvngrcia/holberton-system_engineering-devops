@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Setting up hostname in nginx headers
+sed -i "2 i\add_header X-Served-By $HOSTNAME;" test.txt
+sudo service nginx restart
