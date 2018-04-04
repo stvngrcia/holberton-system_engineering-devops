@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Switching users
+su $1
+whoami
