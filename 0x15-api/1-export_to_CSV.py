@@ -12,7 +12,7 @@ def tasks_done(id):
     url = "https://jsonplaceholder.typicode.com/users/{}".format(id)
     response = requests.get(url)
     response_json = response.json()
-    employee_name = response_json.get("name")
+    employee_name = response_json["name"]
 
     url = "https://jsonplaceholder.typicode.com/users/{}/todos".format(id)
     todos = requests.get(url)
@@ -23,7 +23,7 @@ def tasks_done(id):
     task_list = ""
 
     for task in todos_json:
-        if task.get("completed") is True:
+        if task["completed"] is True:
             task_compleated += 1
             task_list += "\t" + task["title"] + "\n"
 
