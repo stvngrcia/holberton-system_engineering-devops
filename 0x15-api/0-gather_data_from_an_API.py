@@ -25,7 +25,7 @@ def tasks_done(id):
     for task in todos_json:
         if task.get("completed") is True:
             task_compleated += 1
-            task_list += "\t" + task.get("title") + "\n"
+            task_list += "\t " + task.get("title") + "\n"
 
     print("Employee {} is done with tasks({}/{}):".format(employee_name,
                                                           task_compleated,
