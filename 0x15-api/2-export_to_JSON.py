@@ -1,7 +1,8 @@
 #!/usr/bin/python3
+import json
 import requests
 import sys
-import json
+
 
 
 def tasks_done(id):
