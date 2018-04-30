@@ -34,7 +34,7 @@ def tasks_done():
 
     file_name = "todo_all_employees.json"
     with open(file_name, "a") as fd:
-        json.dump(all_todos, fd, indent=4)
+        json.dump(all_todos, fd)
 
 
 if __name__ == "__main__":
