@@ -4,7 +4,7 @@ import sys
 
 
 def tasks_done(id):
-    '''Script that displays an employee completed TODO tasks in stout
+    '''Script that exports an employee TODO tasks to a csv file
         Parameters:
         employee_id: Is an interger representing an employee id.
     '''
@@ -22,15 +22,18 @@ def tasks_done(id):
     task_compleated = 0
     task_list = ""
 
-    for task in todos_json:
-        if task["completed"] is True:
-            task_compleated += 1
-            task_list += "\t" + task["title"] + "\n"
+    file_name = "{}.csv".format(id)
 
-    print("Employee {} is done with tasks({}/{}):".format(employee_name,
-                                                          task_compleated,
-                                                          number_tasks))
-    print(task_list[:-1])
+    with open(file_name, "a") as fd:
+        for todo in todos_json:
+            completed = todo.get("completed")
+            title = todo.get("title")
+            csv_data = "\"{}\",\"{}\",\"{}\",\"{}\"\n".format(id,
+                                                              employee_name,
+                                                              completed,
+                                                              title
+                                                              )
+            fd.write(csv_data)
 
 
 if __name__ == "__main__":
