@@ -4,7 +4,6 @@ import requests
 import sys
 
 
-
 def tasks_done(id):
     '''Script that exports an employee TODO tasks to a json file
         Parameters:
