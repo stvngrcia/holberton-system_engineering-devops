@@ -10,12 +10,10 @@ def recurse(subreddit, hot_list=[], after=""):
     response = requests.get(url, headers=header)
 
     if response.status_code == 200:
-        try:
-            hot = response.json()["data"]["children"]
-            after = response.json()["data"]["after"]
-        except:
-            return None
+        hot = response.json()["data"]["children"]
+        after = response.json()["data"]["after"]
         if after is None:
+            hot_list = get_children(hot, len(hot))
             return hot_list
         hot_list.append(recurse(subreddit, hot_list, after=after))
         hot_list = get_children(hot, len(hot))
