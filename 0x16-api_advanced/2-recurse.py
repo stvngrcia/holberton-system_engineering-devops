@@ -19,7 +19,7 @@ def recurse(subreddit, hot_list=[], after=""):
         hot_list.append(recurse(subreddit, hot_list, after=after))
         hot_list = get_children(hot, len(hot))
     else:
-        return "None"
+        return None
     return hot_list
 
 
